@@ -10,13 +10,6 @@ A simple weather application that shows current weather and 7-day forecast based
 - Automatic location detection
 - Beautiful and modern UI
 
-## Setup
-
-1. Clone this repository or download the files
-2. Sign up for a free API key at [OpenWeatherMap](https://openweathermap.org/api)
-3. Replace `YOUR_API_KEY` in `script.js` with your actual OpenWeatherMap API key
-4. Open `index.html` in your web browser
-
 ## Usage
 
 1. When you open the website, it will ask for permission to access your location
