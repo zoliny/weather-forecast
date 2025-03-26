@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://openweathermap.org/img/wn/01d@2x.png">
+    <link rel="shortcut icon" type="image/png" href="https://openweathermap.org/img/wn/01d@2x.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-panel">
+            <div class="location-section">
+                <h1>Weather<span class="accent">Hub</span></h1>
+                <div class="city-selector">
+                    <select id="city-select" onchange="handleCitySelect()">
+                        <option value="">Select Location</option>
+                        <option value="london">London (GMT/UTC)</option>
+                        <option value="paris">Paris (GMT+1)</option>
+                        <option value="berlin">Berlin (GMT+1)</option>
+                        <option value="moscow">Moscow (GMT+3)</option>
+                        <option value="dubai">Dubai (GMT+4)</option>
+                        <option value="mumbai">Mumbai (GMT+5:30)</option>
+                        <option value="singapore">Singapore (GMT+8)</option>
+                        <option value="tokyo">Tokyo (GMT+9)</option>
+                        <option value="sydney">Sydney (GMT+10)</option>
+                        <option value="los_angeles">Los Angeles (GMT-8)</option>
+                        <option value="new_york">New York (GMT-5)</option>
+                    </select>
+                </div>
+                <p id="location-status">Please select a city or allow location access</p>
+            </div>
+
+            <div class="weather-section" id="weather-section">
+                <div class="current-weather">
+                    <div class="weather-main">
+                        <img id="weather-icon" src="" alt="Weather icon">
+                        <div class="temperature">
+                            <span id="current-temp">--</span>°C
+                        </div>
+                    </div>
+                    <div id="weather-description" class="weather-description">--</div>
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <span class="label">Humidity</span>
+                            <span id="humidity">--</span>%
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Wind</span>
+                            <span id="wind-speed">--</span> km/h
+                        </div>
+                    </div>
+                    <div id="weather-advice" class="weather-advice"></div>
+                </div>
+
+                <div class="forecast-section">
+                    <h2>7-Day Forecast</h2>
+                    <div class="forecast-container" id="forecast-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
